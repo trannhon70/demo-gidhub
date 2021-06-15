@@ -1,0 +1,1087 @@
+@media screen and(max-width: 500px) {
+    #films {
+
+        .films__list {
+
+            .films__item {
+
+                .item {
+
+                    .tab-content {
+
+                        .tab-pane {
+
+                            .carousel {
+
+                                .carousel-inner {
+
+                                    .carousel-item {
+
+                                        .carousel-wrap {
+                                            grid-template-columns: 1fr 1fr !important;
+                                            width: 100% !important;
+                                            grid-gap: 10px !important;
+
+                                            .carousel-content {
+
+                                                .carousel-img {
+
+                                                     img {
+                                                         height: 180px !important;
+                                                     }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 570px) {
+    * {
+        font-size: 12px !important;
+    }
+
+    #header {
+        .header__list {
+
+            .header__item {
+    
+                .item { 
+                
+                    .header__wrap {
+
+                        ul.center {
+
+                            li {
+
+                                a {
+
+                                    font-size: 0.8rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #banner {
+        
+        .container-fluid {
+
+            .row {
+
+                .carousel {
+
+                    .carousel-inner {
+
+                        .carousel-item {
+                            
+                            img {
+                                height: 500px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            bottom: -20% !important; 
+            box-sizing: border-box;
+            .book__list {
+
+                .book__item {
+                    grid-template-columns: 1fr 1fr 1fr !important;
+                    
+                    
+                    .dropdown#phim {
+                        grid-column: 1 / span 1 !important;
+                    }
+
+                    .films__button {
+                        grid-column: 2 / span 2 !important;
+                        width: 60%;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    #book {
+        display: none !important;
+    }
+
+    #films {
+
+        .films__list {
+
+            .films__item {
+
+                .item {
+
+                    .tab-content {
+
+                        .tab-pane {
+
+                            .carousel {
+
+                                .carousel-inner {
+
+                                    .carousel-item {
+
+                                        .carousel-wrap {
+                                            grid-template-columns: 1fr 1fr !important;
+
+                                            .carousel-content {
+
+                                                .carousel-img {
+
+                                                     img {
+                                                         height: 250px !important;
+                                                     }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .carousel-control-prev {
+                                    display: none !important;
+                                }
+    
+                                .carousel-control-next {
+                                    display: none !important;
+                                }
+
+                                .carousel-indicators {
+                                    position: absolute !important;
+                                    bottom: -80px !important;
+                                    left: 50% !important; 
+                                    display: block !important;
+                                    display: flex !important;
+                                    flex-direction: row !important;
+                                    transform: translateX(-50%);
+                                    
+                                    li {
+                                        width: 13px;
+                                        height: 13px;
+                                        border-radius: 50%;
+                                        background-color: red !important;
+
+                                        &:nth-child(2) {
+                                            margin: 0 20px !important;
+                                        }
+                                    }
+                                } 
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Max width 1000px
+@media screen and (max-width: 1280px) {
+    // Header
+    #header {
+        width: 100% !important;
+        .header__list {
+
+            .header__item {
+
+                .item {
+
+                    .collapse {
+
+                        .navbar-menu {
+                            flex: 1 !important;
+                        }
+
+                        .navbar-login {
+                            flex: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Fix carousel control bị tràn ra 2 bên màn hình
+@media screen and(max-width: 1280px) {
+    // Films
+    #films {
+
+        .films__list {
+
+            .films__item {
+
+                .item {
+
+                    .tab-content {
+
+                        .tab-pane {
+
+                            .carousel {
+
+                                .carousel-control-prev {
+                                    width: 30px;
+                                    transform: translateX(120px);
+                                }
+
+                                .carousel-control-next {
+                                    width: 30px;
+                                    transform: translateX(-120px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    //Fix phần menu bị sát so với phần login
+    // Header
+    #header {
+
+        .header__list {
+
+            .header__item {
+
+                .item {
+
+                    .collapse {
+
+                        .navbar-menu {
+                            transform: translateX(0) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //Fix phần films chổ carousel control bị sát với các element carousel-inner
+     // Films
+     #films {
+
+        .films__list {
+
+            .films__item {
+
+                .item {
+
+                    .tab-content {
+
+                        .tab-pane {
+
+                            .carousel {
+
+                                .carousel-control-prev {
+                                    width: 30px;
+                                    transform: translateX(70px);
+                                }
+
+                                .carousel-control-next {
+                                    width: 30px;
+                                    transform: translateX(-70px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+    //---------------------------------- Trần Xuân Nhơn ------------------------------------------------
+    //-------------------------------------------------------------------------------------------------------------
+
+    //------------------------------------------------------------------------------------------------------------
+//show Times
+@media screen and (max-width:1000px) {
+    #showTimes{
+
+        .container{
+            
+            .showTimes_table{
+                
+                .showTimes_item{
+
+                    .showTimes_img{
+
+                        img{
+                            width: 25px;
+                            height: 30px;
+                        }
+                    }
+                    .showTimes_item_1{
+
+                        .showTimes_text{
+                            h1{
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    #news {
+        padding: 80px 50px 0 50px !important;
+    }
+}
+//news
+@media screen and (max-width:578px) {
+    
+    #news {
+        padding: 50px 10px 0 10px !important;
+        .container-fluid {
+
+            .container {
+
+                .tab-content{
+
+                    .container{
+
+                        .news_table{
+                           
+                            .news-item{
+                                
+                                height: 100%;
+
+                                h4{
+                                    height: 50px;
+                                //    padding-bottom: 10px !important;
+                                }
+                                ul{
+                                     height: 30px !important;
+                                    
+                                }
+                            }
+                        }
+                        .news-row{
+                            .news_table1{
+                                
+                                .news_item1{
+                                    padding-bottom: 20px;
+                                   
+                                    ul{
+                                        padding-top: 10px;
+                                        li{
+                                           
+                                            a{
+                                                
+                                                
+                                                img{
+                                                   margin-bottom: 0px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #chitiet {
+        height: 800px !important;
+
+        .container {
+            top: 40% !important ;
+
+            .row {
+
+
+                .chitiet_table {
+
+                    .chitiet_text {
+                        text-align: center;
+                    }
+                }
+
+                .chitiet_table1 {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 50px;
+
+                    .chitiet_so{
+
+                        p{
+                            font-size: 3rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    
+    #news {
+        
+        .container-fluid {
+            .container {
+
+                .tab-content{
+                    .container{
+                        .news_table{
+                           
+                            .news-item{
+                                
+                                height: 100%;
+
+                                h4{
+                                    height: 100%;
+                                //    padding-bottom: 10px !important;
+                                }
+                                ul{
+                                     height: 60px !important;
+                                    margin-top: 10px !important;
+                                    padding-bottom: 20px !important;
+                                   
+
+                                }
+                            }
+                        }
+                        .news-row{
+                            .news_table1{
+                                
+                                .news_item1{
+                                    height: 100%;
+
+                                    p{
+                                        height: 10%;
+                                    }
+                                    ul{
+                                        padding-top: 100px;
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+            .button{
+                margin-top: -30px;
+
+            }
+        }
+    }
+
+    #chitiet {
+        height: 800px !important;
+
+        .container {
+            top: 40% !important;
+
+            .row {
+
+
+                .chitiet_table {
+
+                    .chitiet_text {
+                        text-align: center;
+                    }
+                }
+
+                .chitiet_table1 {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 50px;
+
+                    .chitiet_so{
+
+                        p{
+                            height: 120px;
+                            width: 120px;
+                            font-size: 5rem;
+                            position: relative;
+                            text-align: center;
+                            z-index: 1;
+                            border-radius: 50%;
+                            color: white;
+                            background-color: rgba(0, 0, 0, 0.4);
+                            margin-bottom: 0px;  
+                            line-height: 120px; 
+                            text-align: center; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//----------------------------------------
+
+//-------------------------------
+//--------------------------------------------------------------
+
+
+@media screen and (max-width:578px) {
+    // #about{
+        
+    //     .container{
+
+    //         .row{
+
+    //             .UngDung-right{
+    //                 position: relative !important;
+
+    //                 .UngDung_table{
+    //                     padding-right: 0 !important;
+    //                     position: absolute !important;
+    //                     padding-left: 0 !important;
+    //                     top: 0;
+    //                     left: 54% !important;
+    //                     transform: translateX(-50%) !important;
+    //                     width: 50%;
+
+    //                     .owl-stage-outer{
+                            
+    //                         .owl-stage{
+    //                             .owl-item{
+    //                                 // margin-right: 0px !important;
+    //                                 width: 100%;
+    //                             }
+    //                         }
+                            
+    //                     }
+                       
+    //                     img{
+    //                         width: 100%;
+                           
+    //                     }
+
+    //                 }
+                    
+    //             }
+    //         }
+    //     }
+    // }
+
+    //Lịch chiếu
+    #lichchieu {
+
+        .container {
+
+            .tab-content {
+                width: 100% !important;
+
+                #thongTin {
+                    width: 100% !important;
+
+                    .thongTin_item.content {
+                        
+                        span {
+                           display: block;
+                           white-space: pre-line;
+                           width: 75%;
+                           overflow: hidden;
+                           text-overflow: ellipsis;
+                        }
+                    }
+
+                    .thongTin_item.introduce {
+                        text-align: center;
+                    }
+                }
+
+                #danhGia {
+
+                    .danhGia_wrap {
+                        width: 85% !important;
+
+                        .left {
+                            flex: 1.5;
+                        }
+
+                        .right {
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//footer
+@media screen and (max-width:576px) {
+    #footer{
+       
+        .container{
+
+            .footer_table {
+
+                .footer_item {
+                    margin: 20px 0;
+
+                    .footer_img {
+                        
+                        img {
+                            width: 15% !important;
+                            height: 15% !important;
+                        }
+                    }
+
+                    .footer_wrap {
+                        transform: translateX(8%);
+                    }
+                }
+                
+                .footer_item.partner {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .footer_table_1{
+                
+                .footer_logo {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .footer_text_1{
+                    text-align: center;
+                    margin: 25px 0;
+                }
+
+                .certification {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #footer{
+       
+        .container{
+
+            .footer_table{
+              
+                .footer_item{
+
+                    h1{
+                       font-size: 1rem;
+                        
+                    }
+                    p{
+                      font-size: 1rem;
+                    }
+
+                    .row{
+
+                        img{
+                           width: 23px;
+                        }
+                    }
+
+                }
+            }
+
+            .footer_table_1{
+                
+                .footer_text_1{
+                    text-align: center;
+
+                }
+            }
+        }
+    
+    }
+}
+
+
+//About của anh nhơn -----------------------------------------
+//-------------------------------------------
+
+
+// about
+@media screen and (min-width:1199px) {
+    #about{
+        
+        .container{
+
+            .row{
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 303px !important;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1199px) {
+    #about{
+        
+        .container{
+
+            .row{
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 213px !important;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    #about{
+        
+        .container{
+
+            .row{
+
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 421px !important;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #about{
+        
+        .container{
+
+            .row{
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 242px !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+                                .owl-item{
+                                    width: 224px;
+                                   
+                                }
+                            }
+                            
+                        }
+                       
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:575px) {
+    #about{
+        
+        .container{
+
+            .row{
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 275px !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+                                .owl-item{
+                                    width: 224px;
+                                   
+                                }
+                            }
+                            
+                        }
+                       
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    #about{
+        
+        .container{
+
+            .row{
+
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 248px !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+
+                                .owl-item{
+                                    width: 240px;
+                                   
+                                }
+                            }
+                            
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:530px) {
+    #about{
+        
+        .container{
+
+            .row{
+
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 48% !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+
+                                .owl-item{
+                                    width: 236px;
+                                   
+                                }
+                            }
+                            
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+// @media screen and (min-width:530px) {
+//     #about{
+        
+//         .container{
+
+//             .row{
+//                 .UngDung-left{
+//                     padding-bottom: 20px;
+//                 }
+
+//                 .UngDung-right{
+                    
+//                     .UngDung_table{
+//                         padding-right: 48% !important;
+
+//                         .owl-stage-outer{
+                            
+//                             .owl-stage{
+//                                 .owl-item{
+//                                     width: 236px;
+                                   
+//                                 }
+//                             }
+                            
+//                         }
+                       
+//                         img{
+                            
+                           
+//                         }
+
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+@media screen and (max-width:470px) {
+    #about{
+        
+        .container{
+
+            .row{
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 42% !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+                                .owl-item{
+                                    width: 236px;
+                                   
+                                }
+                            }
+                            
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    #about{
+        
+        .container{
+
+            .row{
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 36% !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+                                .owl-item{
+                                    width: 236px;
+                                   
+                                }
+                            }
+                            
+                        }
+                       
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    #about{
+        
+        .container{
+
+            .row{
+                .UngDung-left{
+                    padding-bottom: 20px;
+                }
+
+                .UngDung-right{
+                    
+                    .UngDung_table{
+                        padding-right: 30% !important;
+
+                        .owl-stage-outer{
+                            
+                            .owl-stage{
+                                .owl-item{
+                                    width: 236px;
+                                   
+                                }
+                            }
+                            
+                        }
+                       
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,250 @@
+#lichchieu{
+    transform: translateY(-16%);
+
+    .container{
+
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            border: none !important;
+
+            .nav-item { 
+
+                &:nth-child(2) {
+                    margin: 0 20px;
+                }
+
+                a {
+                    color: #000;
+                    font-size: 1.6rem !important;
+                    font-weight: 500;
+                    height: 48px;
+                    transition: all .5s;
+                    border: none;
+                    outline: none;
+                    background-color: transparent !important;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        color: $primary-color;
+                    }
+
+                    &:focus {
+                        transform: scale(1.2);
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            width: 90%;
+            margin: 0 auto;
+
+            #lichChieu1 {
+
+                .lichChieu_grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    // grid-gap: 10px;
+
+                    .lichChieu_item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px 10px;
+                        opacity: 0.5;
+                        border: 1px solid $bg-color;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 10px;
+                        }
+
+                        .lichChieu_info {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            h3 {
+                                font-size: 1rem;
+                            }
+
+                            p {
+                                font-size: 0.9rem;
+                                color: $text-color;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .lichChieu_item.active {
+                        opacity: 1;
+                    }
+
+                    .lichChieu_item.lichChieu_has-calendar {
+                        grid-row: 1;
+                        grid-column: 2 / span 3;
+                        overflow-x: scroll;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        &::-webkit-scrollbar {
+                            background-color: #F5F5F5;
+                            height: 5px;
+                            width: 10px;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                            background-color: black;
+                        }
+                    
+                        .calendar {
+                            padding: 10px 27px;
+                            // width: 200px !important;
+                            text-align: center;
+
+                            h4 {
+                                font-size: 1.2rem;
+                            }
+
+                            h5 {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        .calendar.active {
+
+                            h4,h5 {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                    .lichChieu_item.showTimes {
+                        grid-column: 2 / span 3;
+                        grid-row: 2 / span 5;  
+                        opacity: 1;
+                        
+                        span {
+                            font-weight: 500;
+                            transform: translateY(-100px);
+                        }
+                    }
+                }
+            }
+
+            #thongTin {
+                width: 95%;
+                margin: 0 auto;
+
+                .thongTin_grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 15px;
+                
+                    .thongTin_item {
+                        
+                        h3 {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .thongTin_item.info {
+                        grid-row: 2 / span 5;
+                    }
+
+                    .thongTin_item.introduce {
+                        grid-row: 1;
+                    }
+
+                    .thongTin_item.content {
+                        grid-column: 2 / span 3;
+                    }
+
+                    .thongTin_item.introduce,
+                    .thongTin_item.info {
+                        grid-column: 4 / span 5;
+                    }
+
+                    .thongTin_item.heading {
+                        grid-column: 1;
+                    }
+
+                    .thongTin_item.content1 {
+                        grid-row: 1;
+                    }
+
+                    .thongTin_item.content2 {
+                        grid-row: 2;
+                    }
+
+                    .thongTin_item.content3 {
+                        grid-row: 3;
+                    }
+
+                    .thongTin_item.content4 {
+                        grid-row: 4;
+                    }
+
+                    .thongTin_item.content5 {
+                        grid-row: 5;
+                    }
+                }
+            }
+
+            #danhGia {
+                
+                .danhGia_wrap {
+                    width: 70%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid $bg-color;
+                    padding: 10px 15px;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 3px rgba(0,0,0,0.2), -2px -2px 3px rgba(0,0,0,0.2) ;
+
+                    .left {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        img {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+
+                        span {
+                            color: $text-color;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            background-color: transparent;
+                            border: none;
+
+                            &:focus {
+                                outline: none;
+                            }
+
+                            i {
+                                font-size: 1.5rem;
+                                color: #fe3b1e85;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

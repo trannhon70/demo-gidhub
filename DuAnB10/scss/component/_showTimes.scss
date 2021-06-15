@@ -1,0 +1,94 @@
+#showTimes{
+    background: url();
+    .container{
+        padding-top: 120px;
+        
+        padding-bottom: 20px;
+        .showTimes_table{
+            // padding-right: 0px;
+            .showTimes_item{
+                border: 1px solid rgb(116, 113, 113);
+                padding-right: 15px;
+                .showTimes_img_active{
+                    opacity: 1 !important;
+                }
+                .showTimes_img_1{
+                    border-bottom: 0px !important;
+                }
+                .showTimes_img{
+                    border-bottom: 1px solid rgb(116, 113, 113);
+                    padding: 8px 0px;
+                    // height: 90px;
+                    opacity: .5;
+                    img{
+                        height: 60px;
+                        width: 60px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                }
+                .showTimes_img:hover{
+                    opacity: 1;
+                    transition:all .3s;
+                }
+                .showTimes_item_2{
+                    border-bottom: 0px !important;
+                }
+                .showTimes_item_1:hover{
+                    opacity: 1;
+                    transition: all .5s;
+                }
+                .showTimes_item_1_active{
+                    opacity: 1 !important;
+                }
+                .showTimes_item_1{
+                    display: flex;
+                    border-bottom: 1px solid rgb(116, 113, 113);
+                    padding: 15px 0px;
+                    height: 90px;
+                    opacity: .5;
+                    img{
+                        height: 60px;
+                        width: 60px;
+                    }
+                    .showTimes_text{
+                        padding-left: 15px;
+                        h1{
+                            font-size: 14px;
+                            color: #8bc541;
+                            span{
+                                color: black;
+                                font-size: 14px;
+                            }
+                        }
+                        h2{
+                            font-size: 1rem;
+                            color: #949494;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: block;
+                        }
+                        p{
+                            a{
+                                text-decoration: none;
+                                color: #fb4226!important;
+                            }
+                        }
+                    }
+                }
+
+                h5{
+                    padding-top: 30px;
+                    color: #333;
+                    font-size: 14px;
+                    text-align: center;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

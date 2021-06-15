@@ -1,0 +1,167 @@
+#banner {
+    margin-top: 75px;
+    position: relative;
+
+    .container-fluid {
+
+        .row {
+            margin: 0;
+            
+            .carousel {
+                position: relative;
+                
+                .carousel-inner {
+
+                    .carousel-item {
+                        position: relative;
+
+                        &:hover .overlay{
+                            display: block;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 640px;
+                        }
+
+                        .overlay {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: none;
+                            transition: all 0.7s;
+
+                            a {
+
+                                i {
+                                    font-size: 2rem;
+                                    color: white;
+                                    background-color: rgba(0,0,0,0.5);
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 505;
+                                    border-radius: 50%;
+                                    text-align: center;
+                                    line-height: 80px;
+                                    border: 2px solid #fff;
+                                    transition: all 0.5s;
+
+                                    &:hover {
+                                        opacity: 0.7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //Carousel control
+                .carousel-control {
+                        
+                    i {
+                        font-size: 3rem !important;
+                    }
+                }
+
+
+
+                //Carousel indicators
+                .carousel-indicators {
+                    position: absolute;
+                    bottom: 15%;    
+
+                    li {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: white !important;
+                        opacity: 0.8 !important;
+
+                        &:nth-child(2) {
+                            margin: 0 10px;
+                        }
+                    }
+
+                    li.active {
+                        background-color: $primary-color !important;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .container {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+
+        .book__list {
+            width: 90%;
+            background-color: white;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.4), -3px -3px 5px rgba(0,0,0,0.4);
+            padding: 20px 10px;
+            border-radius: 5px;
+
+            .book__item {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+
+                .dropdown {
+
+                    button  {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        background-color: white;
+                        border: none;
+
+                        &::after {
+                            display: none;
+                        }
+
+                        &:focus {
+                            border: none !important;
+                            outline: none !important;
+                            box-shadow: none !important;
+                        }
+
+                        i {
+                            color: $text-color;
+                        }
+                    }
+
+                    .dropdown-menu {    
+                        z-index: 20;
+
+                        .dropdown-item {
+                            transition: 0.2s;
+                            z-index: 10 !important;
+
+                            &:hover {
+                                background-color: #60c5ef;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown#phim {
+                    grid-column: 1 / span 2;
+                }
+
+                .films__button {
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

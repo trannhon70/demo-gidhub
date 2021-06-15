@@ -1,0 +1,104 @@
+#footer{
+    background-color: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #949494;
+
+    .container{
+
+        .footer_table{
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .footer_item{
+
+                h1{
+                    color: white;
+                    font-size: 0.9rem;
+                    height: 30px;            
+                }
+
+                p{
+                    cursor: pointer;
+
+                    &:hover {
+                        transition: all .5s;
+                        color: white;
+                    }
+                }
+                
+               .footer_wrap {
+                   width: 80%;
+                   display: grid;
+                   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                   grid-gap: 10px;
+
+                   img {
+                       width: 30px;
+                       height: 30px;
+                       border-radius: 50%;
+                   }
+               }
+
+                .footer_img{
+                    display: flex;
+                    justify-content: center;
+
+                    img{
+                        width: 20% !important;
+                        height: 20% !important;
+                        cursor: pointer;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+
+        hr{
+            margin: 40px 0;
+            background: rgba(107, 104, 104, 0.897);
+        }
+
+        .footer_table_1{
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .footer_text_1{
+
+                h2{
+                    color: white;
+                    font-size: 12px;
+                }
+
+                p{
+                    margin-bottom: 0px;
+
+                    a{
+                        text-decoration: none;
+                        color: red;
+                    }
+                }
+            }
+
+            .footer_logo {
+
+                img {
+                    width: 80px;
+                    height: 36px;
+                    border-radius: 10px;
+                }
+            }
+
+            .certification {
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+                    width: 132px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+}

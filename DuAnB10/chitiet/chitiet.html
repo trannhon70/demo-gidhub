@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+      <!-- Header -->
+      <header id="header">
+        <div class="container-fluid header__list">
+            <div class="row header__item">
+              
+                <div class="col-12 item">
+                    <nav class="navbar navbar-expand-md bg-dlight navbar-light">
+                        <!-- Brand -->
+                        <div class="col-3 col-md-1 brand">
+                            <a class="navbar-brand" href="./../index.html">
+                                <img src="../images/logo.png" alt="">
+                            </a>
+                        </div>
+                      
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse col-9 col-md-11" id="collapsibleNavbar">
+                          <ul class="navbar-nav navbar-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lịch chiếu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cụm rạp</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ứng dụng</a>
+                            </li>
+                          </ul>
+                          <ul class="navbar-nav navbar-login">
+                              <li class="nav-item">
+                                  <a href="" class="nav-link">
+                                    <img src="../images/avatar.png" alt="" id="avatar">
+                                    <span>Đăng Nhập</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item separate">
+                                <div class="item"></div>
+                              </li>
+                              <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                        <div class="button-left">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Hồ Chí Minh</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="">Hồ Chí Minh</a>
+                                        <a class="dropdown-item" href="">Hà Nội</a>
+                                        <a class="dropdown-item" href="">Đà Nẵng</a>
+                                        <a class="dropdown-item" href="">Hải Phòng</a>
+                                        <a class="dropdown-item" href="">Biên Hòa</a>
+                                        <a class="dropdown-item" href="">Nha Trang</a>
+                                        <a class="dropdown-item" href="">Bình Dương</a>
+                                        <a class="dropdown-item" href="">Phan Thiết</a>
+                                        <a class="dropdown-item" href="">Hạ Long</a>
+                                        <a class="dropdown-item" href="">Cần Thơ</a>
+                                        <a class="dropdown-item" href="">Đồng Tháp</a>
+                                    </div>
+                                </div>
+                              </li>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+     </header>
+
+    <!--chitiet-->
+    <section id="chitiet">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+               <div class="chitiet_table col-7 col-sm-6 col-lg-3">
+                    <img src="./../images/bhd-star-bitexco-16105952137769.png" alt="">
+               </div>
+               <div class="chitiet_table col-5 col-sm-6 col-lg-6">
+                    <div class="chitiet_text">
+                        <h3>BHD Star Bitexco</h3>
+                        <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                        <button type="button" class="btn">Mua vé</button>
+                    </div>
+               </div>
+               <div class="chitiet_table1 col-12 col-sm-12 col-lg-3">
+                   <div class="chitiet_so">
+                       <p>8</p>
+                       <span class="bar"></span>
+                   </div>
+                   <div class="chitiet_img">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                   </div>
+                   <h4>198 người đánh giá</h4>
+               </div>
+            </div>       
+        </div>
+    </section>
+
+    <!--lịch chiếu phim-->
+    <section id="lichchieu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#lichChieu1">Lịch Chiếu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#thongTin">Thông Tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#danhGia">Đánh giá</a>
+              </li>
+            </ul>
+          
+            <div class="tab-content ">
+              <div id="lichChieu1" class="container tab-pane active"><br>
+                <!-- <div class="showTimes_item col-12 col-md-4">
+                    <div class="showTimes_item_1 showTimes_item_1_active">
+                      <img src="./../images/bhd-star-bitexco-16105952137769.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Bitexco</span></h1>
+                        <h2>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</h2>                
+                      </div>
+                    </div>
+                    <div class="showTimes_item_1">
+                      <img src="./../images/bhd-star-vincom-thao-dien-16105955634183.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Vincom Thảo Điền</span></h1>
+                        <h2>L5-Megamall, 159 XL Hà Nội, Q.2</h2>                   
+                      </div>
+                    </div>
+                    <div class="showTimes_item_1">
+                      <img src="./../images/bhd-star-vincom-3-2-16105957596860.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Vincom 3/2</span></h1>
+                        <h2>L5-Vincom 3/2, 3C Đường 3/2, Q.10</h2>                   
+                      </div>
+                    </div>
+                    <div class="showTimes_item_1">
+                      <img src="./../images/bhd-star-pham-hung-16105959230642.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Phạm Hùng</span></h1>
+                        <h2>L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh</h2>                    
+                      </div>
+                    </div>
+                    <div class="showTimes_item_1">
+                      <img src="./../images/bhd-star-vincom-quang-trung-16105960645760.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Vincom Quang Trung</span></h1>
+                        <h2>B1-Vincom QT, 190 Quang Trung, Gò Vấp</h2>                    
+                      </div>
+                    </div>
+                    <div class="showTimes_item_1">
+                      <img src="./../images/bhd-star-vincom-le-van-viet-16105962051265.png" alt="">
+                      <div class="showTimes_text col-10">
+                        <h1>BHD Star <span>- Vincom Lê Văn Việt</span></h1>
+                        <h2>L4-Vincom Plaza, 50 Lê Văn Việt, Q.9</h2>                    
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 showTimes_item_3">
+                  <div class="row ">
+                    <div class="tab-content-menu text-center">
+                      <div style="color: red;">
+                        <h4>chủ nhật</h4>
+                        <p>30</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ hai</h4>
+                        <p>31</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ ba</h4>
+                        <p>01</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ tư</h4>
+                        <p>02</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ năm</h4>
+                        <p>03</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ sáu</h4>
+                        <p>04</p>
+                      </div>
+                    </div>
+                    <div class="tab-content-menu text-center">
+                      <div>
+                        <h4>thứ bảy</h4>
+                        <p>05</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row1 ">
+                    <span>Không có suất chiếu</span>
+                  </div>
+                </div> -->
+                <div class="row">
+                  <div class="col-12">
+                      <div class="lichChieu_grid">
+                          <div class="lichChieu_item active">
+                            <img src="./../images/bhd-star-bitexco-16105952137769.png" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item">
+                            <img src="./../images/bhd-star-pham-hung-16105959230642.png" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item">
+                            <img src="./../images/bhd-star-vincom-le-van-viet-16105962051265.png" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item">
+                            <img src="./../images/bhd-star-vincom-quang-trung-16105960645760.png" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item">
+                            <img src="./../images/bhd-star-vincom-thao-dien-16105955634183.png" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item">
+                            <img src="./../images/cinestar-hai-ba-trung-15383833704033.jpg" alt="">
+                            <div class="lichChieu_info">
+                              <h3>BHD Star Bitexco</h3>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item lichChieu_has-calendar">
+                            <div class="calendar" disable>
+                              <h4>Thứ 2</h4>
+                              <h5>01</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 3</h4>
+                              <h5>02</h5>
+                            </div>
+                            <div class="calendar active">
+                              <h4>Thứ 4</h4>
+                              <h5>03</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 5</h4>
+                              <h5>04</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 6</h4>
+                              <h5>05</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 7</h4>
+                              <h5>06</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Chủ Nhật</h4>
+                              <h5>07</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 2</h4>
+                              <h5>08</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 3</h4>
+                              <h5>09</h5>
+                            </div>
+                            <div class="calendar">
+                              <h4>Thứ 4</h4>
+                              <h5>10</h5>
+                            </div>
+                          </div>
+                          <div class="lichChieu_item showTimes">
+                              <span>Không có suất chiếu</span>
+                          </div>   
+                          <div class="overlay"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div id="thongTin" class="container tab-pane fade"><br>
+                <div class="thongTin_grid">
+                  <div class="thongTin_item heading">
+                    <h3>Địa điểm</h3>
+                  </div>
+                  <div class="thongTin_item content content1">
+                    <span>L5-Megamall, 159 XL Hà Nội, Q.2</span>
+                  </div>
+                  <div class="thongTin_item introduce">
+                    <span>Giới Thiệu</span>
+                  </div>
+                  <div class="thongTin_item heading">
+                    <h3>Điện Thoại</h3>
+                  </div>
+                  <div class="thongTin_item content content2">
+                    <span>028 3744 6969</span>
+                  </div>
+                  <div class="thongTin_item info">
+                    <p>Cụm rạp mới BHD Star Mega Mall Thảo Điền toạ lạc tại lầu 5 của TTTM Vincom. Với tầm vóc thương mại và thương hiệu có tiếng của các TTTM Vincom cũng như quy mô đầu tư chất lượng quốc tế của tập đoàn BHD, thì rõ ràng đây lại là một sự kết hợp tuyệt vời nữa giữa giải trí và mua sắm, thiên đường cho các gia đình và các bạn trẻ hội tụ.</p>
+                  </div>
+                  <div class="thongTin_item heading">
+                    <h3>Email</h3>
+                  </div>
+                  <div class="thongTin_item content content3">
+                    <span>info@bhdstar.vn</span>
+                  </div>
+                  <div class="thongTin_item heading">
+                    <h3>Phòng Chiếu</h3>
+                  </div>
+                  <div class="thongTin_item content content4">
+                    <span>6 2D</span>
+                  </div>
+                  <div class="thongTin_item heading">
+                    <h3>Giờ mở cửa</h3>
+                  </div>
+                  <div class="thongTin_item content content5">
+                    <span>8:00 - 24:00</span>
+                  </div>
+                </div>
+              </div>
+              <div id="danhGia" class="container tab-pane fade"><br>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="danhGia_wrap">
+                      <div class="left">
+                        <img src="./../images/avatar.png" alt="">
+                        <span>Hãy chấm điểm cho rạp nhé!</span>                    
+                      </div>
+                      <div class="right">
+                        <button onclick="danhGia()" id="1sao">
+                          <i class="fas fa-star"></i>
+                        </button>
+                        <button onclick="danhGia()" id="2sao">
+                          <i class="fas fa-star"></i>
+                        </button>
+                        <button onclick="danhGia()" id="3sao">
+                          <i class="fas fa-star"></i>
+                        </button>
+                        <button onclick="danhGia()" id="4sao">
+                          <i class="fas fa-star"></i>
+                        </button>
+                        <button onclick="danhGia()" id="5sao">
+                          <i class="fas fa-star"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+     <!-- Footer -->
+     <footer id="footer">
+      <div class="container">
+        <div class="row footer_table">
+          <div class="footer_item col-6 col-md-2">
+            <h1>TIX</h1>
+            <p>FAQ</p>
+            <p>Brand Guidelines</p>
+          </div>
+          <div class="footer_item col-6 col-md-2">
+            <h1></h1>
+            <p>Thỏa thuận sử dụng</p>
+            <p>Chính sách bảo mật</p>
+          </div>
+          <div class="footer_item col-12 col-md-4 partner" style="padding-right: 50px">
+            <h1>ĐỐI TÁC</h1>
+            <div class="footer_wrap">
+              <img src="./../images/cgv.png" alt="">
+              <img src="./../images/bhd.png" alt="">
+              <img src="./../images/galaxycine.png" alt="">
+              <img src="./../images/cinestar.png" alt="">
+              <img src="./../images/404b8c4b80d77732e7426cdb7e24be20.png" alt="">
+              <img src="./../images/megags.png" alt="">
+              <img src="./../images/bt.jpg" alt="">
+              <img src="./../images/dongdacinema.png" alt="">
+              <img src="./../images/TOUCH.png" alt="">
+              <img src="./../images/cnx.jpg" alt="">    
+              <img src="./../images/STARLIGHT.png" alt="">
+              <img src="./../images/dcine.png" alt="">
+              <img src="./../images/zalopay_icon.png" alt="">
+              <img src="./../images/payoo.jpg" alt="">
+              <img src="./../images/VCB.png" alt="">
+              <img src="./../images/AGRIBANK.png" alt="">
+              <img src="./../images/VIETTINBANK.png" alt="">
+              <img src="./../images/IVB.png" alt="">
+              <img src="./../images/123go.png" alt="">
+              <img src="./../images/laban.png" alt="">
+            </div>
+          </div>
+          <div class="footer_item col-6 col-md-2">
+            <h1 class="text-center">MOBILE APP</h1>
+            <div class="footer_img">
+              <img src="./../images/apple-logo.png" alt="">
+              <img src="./../images/android-logo.png" alt="">
+            </div>
+          </div>
+          <div class="footer_item col-6 col-md-2">
+            <h1 class="text-center">SOCIAL</h1>
+            <div class="footer_img">
+              <img src="./../images/facebook-logo.png" alt="">
+              <img src="./../images/zalo-logo.png" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row footer_table_1">
+          <div class="col-12 col-md-2 footer_logo">
+            <img src="./../images/zion-logo.jpg" alt="" >
+          </div>
+          <div class="footer_text_1 col-12 col-md-8">
+            <h2>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h2>
+            <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+            <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,<br>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020  do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+            <p>Số Điện Thoại (Hotline): 1900&nbsp;545&nbsp;436 <br>Email: <a href="mailto:support@tix.vn">support@tix.vn</a></p>
+          </div>
+          <div class="col-12 col-md-2 certification">
+            <img src="./../images/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- My Script -->
+    <script>
+        var danhGia = function() {
+          alert('Vui lòng đăng nhập trước khi thực hiện thao tác !');
+        }
+    </script>
+  </body>
+</html>
